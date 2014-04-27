@@ -24,19 +24,19 @@ a {
 }
 
 a:link {
-  color:#C83737;
+  color:#5B83CB;
 }
 
 a:visited {
-  color:#AC9393;
+  color:#3369CB;
 }
 
 a:hover {
-  color:#F4D7D7;
+  color:#A0AEC5;
 }
 
 a:active {
-  color:#DE8787;
+  color:#002362;
 }
 
 ul.nav {
