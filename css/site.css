@@ -1,44 +1,8 @@
+* {
+  font-family: 'VT323', monospace;
+}
+
 body {
-	background-color: #333;
-	color: #fff;
-  font-family: 'Roboto Slab', serif;
-	width: 50%;
-}
-
-h4 {
-	margin-bottom: 0em;
-	padding-bottom: 0em;
-}
-
-p {
-	font-size: 0.9em;
-}
-
-td {
-  vertical-align: bottom;
-  text-align: center;
-}
-
-a {
-  text-decoration:none;
-}
-
-a:link {
-  color:#5B83CB;
-}
-
-a:visited {
-  color:#3369CB;
-}
-
-a:hover {
-  color:#A0AEC5;
-}
-
-a:active {
-  color:#002362;
-}
-
-ul.nav {
-  list-style-type: none;
+  background-image: url('../img/tile_01.png');
+  background-repeat: repeat;
 }
