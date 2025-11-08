@@ -5,6 +5,31 @@
 </head>
 
 <body>
+  <h3>2025-11-08</h3>
+  <p>
+  Long time no talk. Unibus continues.
+  </p>
+  <p>
+  Almost done with the priority bus part of the library... I think.
+  </p>
+  <p>
+  Haven't had much time to follow through on my ideas, outside of setting up
+  pthread condition signals for blocking the main thread. Since if it needs to
+  wait on data to or from the bus, it needs to block.
+  </p>
+  <p>
+  The cpu (or processor) device is the first to be on the receiving end of
+  using the stuff I talked about above. Probably memory is next up after that.
+  </p>
+  <p>
+  Once those two are done, I should be able to start up the bus arbitrator,
+  cpu, and memory devices and run something. I probably need a bus terminator
+  too, but I'm running on the assumption that anything needing a grant will block
+  it and not pass it so that it rots in limbo forever.
+  </p>
+  <br>
+  <br>
+
   <h3>2025-10-26</h3>
   <p>
   Continuing with Unibus for xmachine. Now with diagrams!

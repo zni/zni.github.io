@@ -26,13 +26,45 @@
   <br>
 
   <h2>Hobby Season Logs</h2>
-  <p>Follow along with pointless updates on what I'm doing in <i>n</i>, where <i>n</i> is the current year.</p>
+  <p>Follow along with updates on what I'm doing in <i>n</i>, where <i>n</i> is the current year.</p>
   <ul>
     <li><a href="seasons/2025.html">2025</a></li>
   </ul>
 
+  <h2>Some Things I'm Currently Working On</h2>
+  <h3>xmachine</h3>
+  <h5>Context</h5>
+  <p>
+    The idea was to write an emulator of some kind, but I eventually
+    wanted to turn it into a PDP-11 for some reason.
+  </p>
+  <p>
+    So it's basically PDP-11 machine code, PDP-11 registers, and some
+    PDP-11-like components. It has a disk controller of sorts to read and write to
+    disk images.
+  </p>
+  <h5>Preset Date</h5>
+  <p>
+  Working on rewriting all the components to be standalone programs, which
+  interact through the Unibus (provided by UNIX file sockets). Each program will
+  use libunibus to handle its bus interaction. The idea being there's a main
+  thread (stuff the device does), a priority bus thread (handles getting access
+  to the data bus and passing grants/other signals passively), and a data bus
+  thread (handles data input/ouput either as bus master or slave).
+  </p>
+  <p>
+  After that is done, I'm probably going to focus on targeting a specific
+  PDP-11 processor, ripping out <tt>tty/</tt> and implementing a VT100, or
+  something similar, and other stuff I haven't given much thought to yet.
+  </p>
+  <ul>
+    <li><a href="https://github.com/zni/xmachine">https://github.com/zni/xmachine</a></li>
+  </ul>
+  <br>
+  <br>
+
   <h2>Some Things I've Worked On</h2>
-  <h5>(In recent/this hobby season(s))</h5>
+  <h5>(In recent hobby seasons)</h5>
 
   <h3>slippy</h3>
   <p>
@@ -47,22 +79,6 @@
   </p>
   <ul>
     <li><a href="https://github.com/zni/slippy">https://github.com/zni/slippy</a></li>
-  </ul>
-  <br>
-  <br>
-
-  <h3>xmachine</h3>
-  <p>
-    The idea was to write an emulator of some kind, but I eventually
-    wanted to turn it into a PDP-11 for some reason.
-  </p>
-  <p>
-    So it's basically PDP-11 machine code, PDP-11 registers, and some
-    PDP-11-like components. It has a disk controller of sorts to read and write to
-    disk images.
-  </p>
-  <ul>
-    <li><a href="https://github.com/zni/xmachine">https://github.com/zni/xmachine</a></li>
   </ul>
   <br>
   <br>
